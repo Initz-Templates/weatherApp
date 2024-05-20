@@ -3,6 +3,7 @@ import './App.css';
 import MainWeatherWindow from './components/MainWeatherWindow';
 import CityInput from './components/CityInput';
 import WeatherBox from './components/WeatherBox';
+import cloud from './components/Refresh.png';
 
 class App extends React.Component {
   state = {
@@ -86,6 +87,8 @@ class App extends React.Component {
             <CityInput city={this.state.city} makeApiCall={this.makeApiCall.bind(this)} />
             <WeatherBoxes />
           </MainWeatherWindow>
+          <button onClick={() => window.location.reload()} className="fixed-button"><img src={cloud} height="125px" alt=''></img>
+          </button>
         </header>
       </div>
     );
