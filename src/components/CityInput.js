@@ -22,7 +22,7 @@ export default class CityInput extends React.Component {
     };
 
     const style = {
-      top: this.props.city ? '-380px' : '-20px',
+      top: this.props.city ? '-380px' : '-190px',
       width: '600px',
       display: 'inline-block',
       padding: '10px 0px 10px 30px',
